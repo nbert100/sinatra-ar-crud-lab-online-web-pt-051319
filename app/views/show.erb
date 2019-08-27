@@ -3,4 +3,6 @@
 <%= @article.title %><br>
 <%= @article.content %>
 
-<form method="POST" action="/articles/<"> </form>
+<form method="POST" action="/articles/<%= @article.id %>/delete">
+      <input id="hidden" type="hidden" name="_method" value="delete">
+      <input type="submit" value="delete">> </form>
